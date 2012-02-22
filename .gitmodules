@@ -1,0 +1,3 @@
+[submodule "vendors/phonegap"]
+	path = vendors/phonegap
+	url = https://github.com/callback/phonegap.git
