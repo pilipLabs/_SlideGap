@@ -34,8 +34,8 @@ android-create: banner
 						    --activity $(PACKAGE_ACTIVITY) 2> /dev/null;
 
 	@cp -r $(PHONEGAP_PREFIX)/lib/android/example/phonegap/templates/project/* .
-	@ln -sf $(PHONEGAP_PREFIX)/lib/android/phonegap-$(PHONEGAP_VERSION).js  ./assets/www/phonegap.js
-	@ln -sf $(PHONEGAP_PREFIX)/lib/android/phonegap-$(PHONEGAP_VERSION).jar ./libs/phonegap-$(PHONEGAP_VERSION).jar
+	@ln -f $(PHONEGAP_PREFIX)/lib/android/phonegap-$(PHONEGAP_VERSION).js  ./assets/www/phonegap.js
+	@ln -f $(PHONEGAP_PREFIX)/lib/android/phonegap-$(PHONEGAP_VERSION).jar ./libs/phonegap-$(PHONEGAP_VERSION).jar
 
 	@cat $(PHONEGAP_PREFIX)/lib/android/example/phonegap/templates/Activity.java > $(PACKAGE_ACTIVITY_PATH)
 
